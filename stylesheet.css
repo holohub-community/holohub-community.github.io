@@ -24,9 +24,9 @@ body {
 	margin: 0;
 	height: 100%;
 }
-/* .hidescrollbar::-webkit-scrollbar {
+.hidescrollbar::-webkit-scrollbar {
 	display: none;
-} */
+}
 
 .banner-image {
 	height: 96%;
@@ -89,15 +89,9 @@ body {
 		text-align: center;
 	}
 }
-.banner-text h1 {
-	margin-top: 0%;
-}
-.banner-text p {
-	margin-bottom: 2%;
-}
 
 .footer-image {
-	height: 96%;
+	height: 48%;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url('assets/images/holohub-banner.jpg');
 	background-position: center;
@@ -116,12 +110,6 @@ body {
 	font-size: 20px;
 	font-weight: 900;
 	line-height: 1;
-}
-.footer-text h1 {
-	margin-top: 0%;
-}
-.footer-text h2 {
-	margin-bottom: 2%;
 }
 
 main {
@@ -296,25 +284,43 @@ main .column {
 }
 
 #navbar {
-	display: flex;
+	display: flexbox;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	left: 0;
+	width: fit-content;
+	height: 100%;
 	background-color: #2f313666;
 	transition: all 0.6s;
 }
 #navbar a {
-	display: flexbox;
+	display: block;
+	height: fit-content;
 	padding: 8px 16px;
 	color: #ffffff;
 	font-family: Arial Black;
 	font-weight: 900;
 	font-size: 20px;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
 	transition: all 0.4s;
 }
 #navbar a:hover {
 	color: #57c0e2;
+}
+#navbar a:not(:first-child) {
+	display: none;
+}
+
+#navbar.sidenav {
+	width: fit-content;
+	height: fit-content;
+}
+#navbar.sidenav.responsive {
+	width: fit-content;
+	height: 100%;
+}
+#navbar.sidenav.responsive a {
+	display: block;
 }
