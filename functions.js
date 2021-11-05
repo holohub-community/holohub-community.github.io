@@ -9,7 +9,6 @@ function showHistory() {
 }
 
 function opennav() {
-	console.log('Navbar opened');
 	const navbar = document.getElementById('navbar');
 	if (navbar.className === 'sidenav') {
 		navbar.className += ' responsive';
