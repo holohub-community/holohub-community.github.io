@@ -273,10 +273,10 @@ main .column {
 #home {
 	display: flex;
 }
-#featured-vtubers {
+#history {
 	display: none;
 }
-#history {
+#affiliation {
 	display: none;
 }
 #volunteering {
