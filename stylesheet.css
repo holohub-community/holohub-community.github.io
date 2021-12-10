@@ -2,7 +2,7 @@ html {
 	scroll-behavior: smooth;
 	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: larger;
 	line-height: 1.5;
 }
 * {
@@ -116,7 +116,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
 	main {
 		text-align: center !important;
 	}
@@ -133,11 +133,12 @@ main .pink-container {
 	background-color: #ffb3b8;
 	width: 100%;
 	padding: 8% 12%;
-	color: #ffffff;
+	color: #2f3136;
 }
 main .pink-container h2 {
 	font-family: Arial Black;
 	font-weight: 900;
+	color: #ffffff;
 }
 main .pink-container button {
 	display: inline-flex;
@@ -220,6 +221,7 @@ main .grey-container {
 main .grey-container h2 {
 	font-family: Arial Black;
 	font-weight: 900;
+	color: #f9e491;
 }
 main .grey-container button {
 	display: inline-flex;
@@ -261,7 +263,7 @@ main .column {
 	padding: 0% !important;
 	text-align: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
 	main .row {
 		display: block;
 	}
@@ -307,10 +309,15 @@ main .column {
 	transition: all 0.4s;
 }
 #navbar a:hover {
-	color: #57c0e2;
+	color: #2f3136;
+	background-color: #57c0e2;
 }
 #navbar a:not(:first-child) {
 	display: none;
+}
+
+#navbar #menu:hover::after {
+	content: 'Menu';
 }
 
 #navbar.sidenav {
