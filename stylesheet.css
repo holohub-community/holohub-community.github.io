@@ -31,7 +31,7 @@ body {
 .banner-image {
 	height: 96%;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url('assets/images/holohub-banner.jpg');
+		url('assets/images/holohub-banner-anniversary-01.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -93,7 +93,7 @@ body {
 .footer-image {
 	height: 48%;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url('assets/images/holohub-banner.jpg');
+		url('assets/images/holohub-banner-anniversary-01.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -294,7 +294,7 @@ main .column {
 	width: fit-content;
 	height: 100%;
 	background-color: #2f313666;
-	transition: all 0.6s;
+	transition: all 0.4s;
 }
 #navbar a {
 	display: block;
@@ -306,7 +306,7 @@ main .column {
 	font-size: 20px;
 	text-align: left;
 	text-decoration: none;
-	transition: all 0.4s;
+	transition: all 0.2s;
 }
 #navbar a:hover {
 	color: #2f3136;
